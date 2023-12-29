@@ -68,4 +68,19 @@ If you can't get this to work, see the [Troubleshooting](https://reactnative.dev
    Definition: Large groups of organisms stitched together to form screen. It's here where you start to see the design coming together and start seeing things like layout in action.
    Examples: Full application screen with header, content etc.
 
+# SVG
+
+SVG is stored in /src/assets/. To use, import your .svg file inside a React component:
+
+```jsx
+import Logo from './logo.svg';
+```
+
+You can then use your image as a component:
+
+````jsx
+<Logo width={120} height={40} />
+```k
+````
+
 #
