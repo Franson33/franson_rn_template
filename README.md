@@ -52,6 +52,9 @@ If you can't get this to work, see the [Troubleshooting](https://reactnative.dev
 
 # Components Structure
 
+This template is using free interpretation of Atomic Design, methodology conceptualized by Brad Frost. It's based on the idea that a user interface should be broken down into fundamental parts,
+much like matter is broken down into atoms. This approach helps in building consistent, scalable, and reusable components.
+
 1. Atoms
    Definition: Atoms are the smallest possible components, like HTML tags such as a form label, an input, or a button. They can be used as they are or, more commonly, combined to create more complex molecules.
    Examples: Text fields, buttons, checkboxes.
@@ -70,7 +73,7 @@ If you can't get this to work, see the [Troubleshooting](https://reactnative.dev
 
 # SVG
 
-SVG is stored in /src/assets/. To use, import your .svg file inside a React component:
+SVG must be stored in /src/assets. To use, import your .svg file inside a React component:
 
 ```jsx
 import Logo from './logo.svg';
@@ -78,9 +81,8 @@ import Logo from './logo.svg';
 
 You can then use your image as a component:
 
-````jsx
+```jsx
 <Logo width={120} height={40} />
-```k
-````
+```
 
 #
