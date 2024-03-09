@@ -1,1 +1,1 @@
-export {fetchHandler} from './helpers/fetchHandler';
+export { fetchHandler } from './helpers/fetchHandler';

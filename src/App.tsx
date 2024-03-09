@@ -1,32 +1,19 @@
-import React, {JSX} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-
-import {MainScreen} from './screens';
-import {RootStackParams, routeNames} from './navigator/routs';
-
-const RootStack = createNativeStackNavigator<RootStackParams>();
+import React, { JSX } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { HomeStack } from '@navigator';
 
 const queryClient = new QueryClient();
 
 export const App = (): JSX.Element => {
   return (
     <QueryClientProvider client={queryClient}>
-      <NavigationContainer>
-        <SafeAreaView style={styles.container}>
-          <RootStack.Navigator initialRouteName={routeNames.HOME}>
-            <RootStack.Screen name={routeNames.HOME} component={MainScreen} />
-          </RootStack.Navigator>
-        </SafeAreaView>
-      </NavigationContainer>
+      <SafeAreaProvider>
+        <NavigationContainer>
+          <HomeStack />
+        </NavigationContainer>
+      </SafeAreaProvider>
     </QueryClientProvider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
