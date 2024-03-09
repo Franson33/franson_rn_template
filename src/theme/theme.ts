@@ -1,13 +1,8 @@
-import {Platform} from 'react-native';
-import {
-  scale,
-  verticalScale,
-  moderateScale,
-  moderateVerticalScale,
-} from 'react-native-size-matters';
-import {spacing, shadowSizes} from '../styles';
+import { Platform } from 'react-native';
+import { scale, verticalScale, moderateScale, moderateVerticalScale } from 'react-native-size-matters';
+import { spacing, shadowSizes } from '../styles';
 
-import {Theme} from './types';
+import { Theme } from './types';
 
 export const theme: Theme = {
   // Functions from react-native-size-matters

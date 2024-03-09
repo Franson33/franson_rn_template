@@ -1,2 +1,2 @@
-export {routeNames} from './routs';
-export type {RootStackParams} from './routs';
+export { routeNames } from './routs';
+export type { RootStackParams } from './routs';

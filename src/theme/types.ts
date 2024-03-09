@@ -1,4 +1,4 @@
-import {IIOSShadow} from '../styles';
+import { IIOSShadow } from '../styles';
 
 export type ScaleFunction = (size: number) => number;
 type SpacingParameter = number | 'auto';
