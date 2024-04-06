@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { MainScreen } from '@screens';
+
 import { homeStackScreens } from '@navigator';
+import { MainScreen } from '@screens';
 
 export type HomeStackParams = {
   [homeStackScreens.HOME]: undefined;
