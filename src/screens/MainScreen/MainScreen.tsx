@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { HomeStackParams } from '@navigator';

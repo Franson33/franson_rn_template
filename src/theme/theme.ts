@@ -1,6 +1,8 @@
 import { Platform } from 'react-native';
-import { scale, verticalScale, moderateScale, moderateVerticalScale } from 'react-native-size-matters';
-import { spacing, shadowSizes } from '@styles';
+
+import { moderateScale, moderateVerticalScale, scale, verticalScale } from 'react-native-size-matters';
+
+import { shadowSizes, spacing } from '@styles';
 
 import { Theme } from './types';
 
